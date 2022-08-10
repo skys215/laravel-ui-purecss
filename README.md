@@ -1,17 +1,17 @@
 <h1 align="center"><img src="https://assets.infyom.com/open-source/infyom-logo.png" alt="InfyOm"></h1>
 
-# Laravel UI AdminLTE
+# Laravel UI PureCSS
 
-[![Total Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-adminlte/downloads)](https://packagist.org/packages/infyomlabs/laravel-ui-adminlte)
-[![Monthly Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-adminlte/d/monthly)](https://packagist.org/packages/infyomlabs/laravel-ui-adminlte)
-[![Daily Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-adminlte/d/daily)](https://packagist.org/packages/infyomlabs/laravel-ui-adminlte)
-[![License](https://poser.pugx.org/infyomlabs/laravel-ui-adminlte/license)](https://packagist.org/packages/infyomlabs/laravel-ui-adminlte)
+[![Total Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/downloads)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
+[![Monthly Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/d/monthly)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
+[![Daily Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/d/daily)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
+[![License](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/license)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
 
-[Laravel Frontend Scaffolding](https://laravel.com/docs/7.x/frontend) for [AdminLTE3](https://adminlte.io/themes/v3/) Theme.
+[Laravel Frontend Scaffolding](https://laravel.com/docs/7.x/frontend) for [PureCSS3](https://purecss.io/themes/v3/) Theme.
 
 ## Documentation
 
-Read [Documentation](https://infyom.com/open-source/laravel-ui-adminlte/docs) for detailed installation steps and usage.
+Read [Documentation](https://infyom.com/open-source/laravel-ui-purecss/docs) for detailed installation steps and usage.
 
 ## Support Us
 
@@ -76,20 +76,20 @@ Checkout Laravel Fortify Video Tutorial
 
 ### Login
 
-![Login](https://raw.github.com/InfyOmLabs/laravel-ui-adminlte/master/screenshots/Login.png)
+![Login](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Login.png)
 
 ### Register
 
-![Register](https://raw.github.com/InfyOmLabs/laravel-ui-adminlte/master/screenshots/Register.png)
+![Register](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Register.png)
 
 ### Reset Password Form
 
-![Reset Password Form](https://raw.github.com/InfyOmLabs/laravel-ui-adminlte/master/screenshots/Reset-Password-Form.png)
+![Reset Password Form](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Reset-Password-Form.png)
 
 ### Reset Password
 
-![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-adminlte/master/screenshots/Reset-Password.png)
+![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Reset-Password.png)
 
 ### Admin Layout
 
-![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-adminlte/master/screenshots/Admin-Layout.png)
+![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Admin-Layout.png)

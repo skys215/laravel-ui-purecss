@@ -1,51 +1,51 @@
 <?php
 
-namespace InfyOm\AdminLTEPreset;
+namespace InfyOm\PureCSSPreset;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Ui\UiCommand;
 
-class AdminLTEPresetServiceProvider extends ServiceProvider
+class PureCSSPresetServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        UiCommand::macro('adminlte', function (UiCommand $command) {
-            $adminLTEPreset = new AdminLTEPreset($command);
+        UiCommand::macro('purecss', function (UiCommand $command) {
+            $adminLTEPreset = new PureCSSPreset($command);
             $adminLTEPreset->install();
 
-            $command->info('AdminLTE scaffolding installed successfully.');
+            $command->info('PureCSS scaffolding installed successfully.');
 
             if ($command->option('auth')) {
                 $adminLTEPreset->installAuth();
-                $command->info('AdminLTE CSS auth scaffolding installed successfully.');
+                $command->info('PureCSS CSS auth scaffolding installed successfully.');
             }
 
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
 
-        UiCommand::macro('adminlte-localized', function (UiCommand $command) {
-            $adminLTEPreset = new AdminLTELocalizedPreset($command);
+        UiCommand::macro('purecss-localized', function (UiCommand $command) {
+            $adminLTEPreset = new PureCSSLocalizedPreset($command);
             $adminLTEPreset->install();
 
-            $command->info('AdminLTE scaffolding installed successfully with localization.');
+            $command->info('PureCSS scaffolding installed successfully with localization.');
 
             if ($command->option('auth')) {
                 $adminLTEPreset->installAuth();
-                $command->info('AdminLTE CSS auth scaffolding installed successfully with localization.');
+                $command->info('PureCSS CSS auth scaffolding installed successfully with localization.');
             }
 
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
 
-        UiCommand::macro('adminlte-fortify', function (UiCommand $command) {
-            $fortifyAdminLTEPreset = new AdminLTEPreset($command, true);
-            $fortifyAdminLTEPreset->install();
+        UiCommand::macro('purecss-fortify', function (UiCommand $command) {
+            $fortifyPureCSSPreset = new PureCSSPreset($command, true);
+            $fortifyPureCSSPreset->install();
 
-            $command->info('AdminLTE scaffolding installed successfully for Laravel Fortify.');
+            $command->info('PureCSS scaffolding installed successfully for Laravel Fortify.');
 
             if ($command->option('auth')) {
-                $fortifyAdminLTEPreset->installAuth();
-                $command->info('AdminLTE CSS auth scaffolding installed successfully for Laravel Fortify.');
+                $fortifyPureCSSPreset->installAuth();
+                $command->info('PureCSS CSS auth scaffolding installed successfully for Laravel Fortify.');
             }
 
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');

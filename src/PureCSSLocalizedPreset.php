@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\AdminLTEPreset;
+namespace InfyOm\PureCSSPreset;
 
 use Illuminate\Console\Command;
 use Illuminate\Container\Container;
@@ -10,17 +10,14 @@ use InfyOm\GeneratorHelpers\LaravelUtils;
 use Laravel\Ui\Presets\Preset;
 use Symfony\Component\Finder\SplFileInfo;
 
-class AdminLTEPreset extends Preset
+class PureCSSLocalizedPreset extends Preset
 {
     /** @var Command */
     protected $command;
 
-    public $isFortify = false;
-
-    public function __construct(Command $command, $isFortify = false)
+    public function __construct(Command $command)
     {
         $this->command = $command;
-        $this->isFortify = $isFortify;
     }
 
     /**
@@ -33,10 +30,8 @@ class AdminLTEPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'bootstrap'   => '^4.6.0',
             'jquery'      => '^3.6',
             'popper.js'   => '^1.16.1',
-            'admin-lte'   => '3.1.0',
             'sass'        => '^1.15.2',
             'sass-loader' => '^8.0.0',
         ] + $packages;
@@ -58,7 +53,7 @@ class AdminLTEPreset extends Preset
      */
     protected static function updateWebpackConfiguration()
     {
-        copy(__DIR__.'/../adminlte-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
+        copy(__DIR__.'/../purecss-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
     }
 
     /**
@@ -70,8 +65,8 @@ class AdminLTEPreset extends Preset
     {
         (new Filesystem())->ensureDirectoryExists(resource_path('sass'));
 
-        copy(__DIR__.'/../adminlte-stubs/bootstrap/_variables.scss', resource_path('sass/_variables.scss'));
-        copy(__DIR__.'/../adminlte-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
+        copy(__DIR__.'/../purecss-stubs/bootstrap/_variables.scss', resource_path('sass/_variables.scss'));
+        copy(__DIR__.'/../purecss-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
     }
 
     /**
@@ -81,8 +76,8 @@ class AdminLTEPreset extends Preset
      */
     protected static function updateBootstrapping()
     {
-        copy(__DIR__.'/../adminlte-stubs/bootstrap/bootstrap.js', resource_path('js/bootstrap.js'));
-        copy(__DIR__.'/../adminlte-stubs/bootstrap/app.js', resource_path('js/app.js'));
+        copy(__DIR__.'/../purecss-stubs/bootstrap/bootstrap.js', resource_path('js/bootstrap.js'));
+        copy(__DIR__.'/../purecss-stubs/bootstrap/app.js', resource_path('js/app.js'));
     }
 
     public function installAuth()
@@ -93,9 +88,7 @@ class AdminLTEPreset extends Preset
 
         $this->scaffoldAuth();
 
-        if (!$this->isFortify) {
-            $this->scaffoldController();
-        }
+        $this->scaffoldController();
     }
 
     protected function ensureDirectoriesExist($viewsPath)
@@ -154,14 +147,12 @@ class AdminLTEPreset extends Preset
 
         $this->addHomeRoute();
 
-        if (!$this->isFortify) {
-            $this->addAuthRoutes();
-        }
+        $this->addAuthRoutes();
 
         tap(new Filesystem(), function ($filesystem) {
-            $filesystem->copyDirectory(__DIR__.'/../adminlte-stubs/auth', resource_path('views/auth'));
-            $filesystem->copyDirectory(__DIR__.'/../adminlte-stubs/layouts', resource_path('views/layouts'));
-            $filesystem->copy(__DIR__.'/../adminlte-stubs/home.blade.php', resource_path('views/home.blade.php'));
+            $filesystem->copyDirectory(__DIR__.'/../purecss-stubs/auth-localized', resource_path('views/auth'));
+            $filesystem->copyDirectory(__DIR__.'/../purecss-stubs/layouts-localized', resource_path('views/layouts'));
+            $filesystem->copy(__DIR__.'/../purecss-stubs/home-localized.blade.php', resource_path('views/home.blade.php'));
 
             collect($filesystem->allFiles(base_path('vendor/laravel/ui/stubs/migrations')))
                 ->each(function (SplFileInfo $file) use ($filesystem) {

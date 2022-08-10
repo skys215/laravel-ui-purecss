@@ -1,10 +1,10 @@
 {
-    "name": "infyomlabs/laravel-ui-adminlte",
-    "description": "Laravel frontend preset for AdminLTE Theme",
+    "name": "infyomlabs/laravel-ui-purecss",
+    "description": "Laravel frontend preset for PureCSS Theme",
     "keywords": [
         "laravel",
         "preset",
-        "adminlte"
+        "purecss"
     ],
     "type": "library",
     "license": "MIT",
@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "InfyOm\\AdminLTEPreset\\": "src/"
+            "InfyOm\\PureCSSPreset\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "InfyOm\\AdminLTEPreset\\AdminLTEPresetServiceProvider"
+                "InfyOm\\PureCSSPreset\\PureCSSPresetServiceProvider"
             ]
         }
     },
