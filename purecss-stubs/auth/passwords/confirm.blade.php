@@ -8,59 +8,65 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-          crossorigin="anonymous"/>
-
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-    <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
-    </div>
+<body>
+    <div id="main" class="pure-g">
+        <div class="sidebar pure-u-1-2 pure-u-md-1-2">
+            <div class="header-large">
+                <h1>{{ config('app.name') }}</h1>
+            </div>
+        </div>
 
-    <div class="card">
-        <div class="card-body login-card-body">
-            <p class="login-box-msg">Please confirm your password before continuing.</p>
+        <div class="content pure-u-1-2 pure-u-md-1-2">
+            <div class="header-medium">
 
-            <form method="POST" action="{{ route('password.confirm') }}">
+            <h1 class="subhead">{{ __('auth.confirm_passwords.title') }}</h1>
+
+            @error('email')
+            <aside class="pure-message message-error">
+                <p><strong>ERROR</strong>: {{ $message }}</p>
+            </aside>
+            @enderror
+            @error('password')
+            <aside class="pure-message message-error">
+                <p><strong>ERROR</strong>: {{ $message }}</p>
+            </aside>
+            @enderror
+
+            <form method="POST" action="{{ route('password.confirm') }}" class="pure-form pure-form-stacked">
                 @csrf
+                <fieldset>
 
-                <div class="input-group mb-3">
-                    <input type="password"
-                           name="password"
-                           class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                           placeholder="Password"
-                           required autocomplete="current-password">
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-lock"></span></div>
-                    </div>
+                    <label for="email">{{ __('auth.email') }}</label>
+                    <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
+
+                    <label for="password">{{ __('auth.password') }}</label>
+                    <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" required autocomplete="current-password" value="">
+
                     @if ($errors->has('password'))
                         <span class="error invalid-feedback">{{ $errors->first('password') }}</span>
                     @endif
-                </div>
+                    <button type="submit" class="pure-button button-success">{{ __('auth.confirm_password') }}</button>
 
-
-                <div class="row">
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-block">Confirm Password</button>
-                    </div>
-                    <!-- /.col -->
-                </div>
+                    <p>
+                        <a href="{{ route('password.request') }}">{{ __('auth.confirm_passwords.forgot_your_password') }}</a>
+                    </p>
+                </fieldset>
             </form>
+                </div>
 
-            <p class="mt-3 mb-1">
-                <a href="{{ route('password.request') }}">Forgot Your Password?</a>
-            </p>
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+                        Copyright&copy;{{ config('app.name') }}
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.login-card-body -->
     </div>
 
-</div>
-
-<script src="{{ mix('js/app.js') }}" defer></script>
+<script src="{{ mix('js/app.js') }}"></script>
 
 </body>
 </html>

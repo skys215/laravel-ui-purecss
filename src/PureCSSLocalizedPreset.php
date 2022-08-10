@@ -30,8 +30,7 @@ class PureCSSLocalizedPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'jquery'      => '^3.6',
-            'popper.js'   => '^1.16.1',
+            'purecss'     => '^2.1.0',
             'sass'        => '^1.15.2',
             'sass-loader' => '^8.0.0',
         ] + $packages;

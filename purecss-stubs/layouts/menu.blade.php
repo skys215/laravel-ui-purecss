@@ -1,7 +1,3 @@
-<!-- need to remove -->
-<li class="nav-item">
-    <a href="{{ route('home') }}" class="nav-link {{ Request::is('home') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-home"></i>
-        <p>Home</p>
-    </a>
+<li class="pure-menu-item {{ Request::is('home') ? ' pure-menu-selected' : '' }}">
+    <a href="{{ route('home') }}" class="pure-menu-link">Home</a>
 </li>
