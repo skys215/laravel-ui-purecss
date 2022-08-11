@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\PureCSSPreset;
+namespace Skys215\PureCSSPreset;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Ui\UiCommand;

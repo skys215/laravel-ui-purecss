@@ -1,5 +1,5 @@
 {
-    "name": "infyomlabs/laravel-ui-purecss",
+    "name": "skys215/laravel-ui-purecss",
     "description": "Laravel frontend preset for PureCSS Theme",
     "keywords": [
         "laravel",
@@ -10,8 +10,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Mitul Golakiya",
-            "email": "me@mitul.me"
+            "name": "skys215",
+            "email": "skys215@gmail.com"
         }
     ],
     "require": {
@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "InfyOm\\PureCSSPreset\\": "src/"
+            "Skys215\\PureCSSPreset\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "InfyOm\\PureCSSPreset\\PureCSSPresetServiceProvider"
+                "Skys215\\PureCSSPreset\\PureCSSPresetServiceProvider"
             ]
         }
     },

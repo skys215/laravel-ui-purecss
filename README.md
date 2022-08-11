@@ -1,11 +1,11 @@
-<h1 align="center"><img src="https://assets.infyom.com/open-source/infyom-logo.png" alt="InfyOm"></h1>
+<h1 align="center"><img src="https://assets.infyom.com/open-source/infyom-logo.png" alt="Skys215"></h1>
 
 # Laravel UI PureCSS
 
-[![Total Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/downloads)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
-[![Monthly Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/d/monthly)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
-[![Daily Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/d/daily)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
-[![License](https://poser.pugx.org/infyomlabs/laravel-ui-purecss/license)](https://packagist.org/packages/infyomlabs/laravel-ui-purecss)
+[![Total Downloads](https://poser.pugx.org/skys215/laravel-ui-purecss/downloads)](https://packagist.org/packages/skys215/laravel-ui-purecss)
+[![Monthly Downloads](https://poser.pugx.org/skys215/laravel-ui-purecss/d/monthly)](https://packagist.org/packages/skys215/laravel-ui-purecss)
+[![Daily Downloads](https://poser.pugx.org/skys215/laravel-ui-purecss/d/daily)](https://packagist.org/packages/skys215/laravel-ui-purecss)
+[![License](https://poser.pugx.org/skys215/laravel-ui-purecss/license)](https://packagist.org/packages/skys215/laravel-ui-purecss)
 
 [Laravel Frontend Scaffolding](https://laravel.com/docs/7.x/frontend) for [PureCSS3](https://purecss.io/themes/v3/) Theme.
 
@@ -13,41 +13,17 @@
 
 Read [Documentation](https://infyom.com/open-source/laravel-ui-purecss/docs) for detailed installation steps and usage.
 
-## Support Us
-
-We have created [14+ Laravel packages](https://github.com/InfyOmLabs) and invested a lot of resources into creating these all packages and maintaining them.
-
-You can support us by either sponsoring us or buying one of our paid products. Or help us by spreading the word about us on social platforms via tweets and posts.
-
-### Buy our Paid Products
-
-[![InfyJobs](https://assets.infyom.com/open-source/new/infyjobs-banner.png)](https://1.envato.market/P0ONVj)
-
-You can also check out our other paid products on [CodeCanyon](https://1.envato.market/BXAnR1).
-
 ### Sponsors
 
-[Become a sponsor](https://opencollective.com/infyomlabs#sponsor) and get your logo on our README on Github with a link to your site.
+[Become a sponsor](https://opencollective.com/skys215#sponsor) and get your logo on our README on Github with a link to your site.
 
-<a href="https://opencollective.com/infyomlabs#sponsor"><img src="https://opencollective.com/infyomlabs/sponsors.svg?width=890"></a>
+<a href="https://opencollective.com/skys215#sponsor"><img src="https://opencollective.com/skys215/sponsors.svg?width=890"></a>
 
 ### Backers
 
-[Become a backer](https://opencollective.com/infyomlabs#backer) and get your image on our README on Github with a link to your site.
+[Become a backer](https://opencollective.com/skys215#backer) and get your image on our README on Github with a link to your site.
 
-<a href="https://opencollective.com/infyomlabs#backer"><img src="https://opencollective.com/infyomlabs/backers.svg?width=890"></a>
-
-### Follow Us
-
-- [Twitter](https://twitter.com/infyom)
-- [Facebook](https://www.facebook.com/infyom)
-- [LinkedIn](https://in.linkedin.com/company/infyom-technologies)
-- [Youtube](https://www.youtube.com/channel/UC8IvwfChD6i7Wp4yZp3tNsQ)
-- [Contact Us](https://infyom.com/contact-us)
-
-## Made with InfyOm Generator
-
-Also, Do not forget to add your website to [Made with InfyOm Generator List](https://github.com/InfyOmLabs/laravel-generator/blob/develop/made-with-generator.md) list.
+<a href="https://opencollective.com/skys215#backer"><img src="https://opencollective.com/skys215/backers.svg?width=890"></a>
 
 ## Security
 
@@ -55,41 +31,9 @@ If you discover any security-related issues, create an issue using the issue tra
 
 ## Credits
 
-- [InfyOm Technologies](https://github.com/infyomlabs)
+- [Skys215](https://github.com/skys215)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Video Tutorials
-
-Checkout Video Tutorial - **By**: [Shailesh Ladumor](https://github.com/shailesh-ladumor)
-
-[<img src="https://img.youtube.com/vi/jA7hr2gE9yc/0.jpg" width="480">](https://youtu.be/jA7hr2gE9yc)
-
-Checkout Laravel Fortify Video Tutorial 
-
-[<img src="https://img.youtube.com/vi/2lHFnYLTHSI/0.jpg" width="480">](https://youtu.be/2lHFnYLTHSI)
-
-## Screenshots
-
-### Login
-
-![Login](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Login.png)
-
-### Register
-
-![Register](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Register.png)
-
-### Reset Password Form
-
-![Reset Password Form](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Reset-Password-Form.png)
-
-### Reset Password
-
-![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Reset-Password.png)
-
-### Admin Layout
-
-![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-purecss/master/screenshots/Admin-Layout.png)
