@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use Skys215\GeneratorHelpers\LaravelUtils;
+use InfyOm\GeneratorHelpers\LaravelUtils;
 use Laravel\Ui\Presets\Preset;
 use Symfony\Component\Finder\SplFileInfo;
 
