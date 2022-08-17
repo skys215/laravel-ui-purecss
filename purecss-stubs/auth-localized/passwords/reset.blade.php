@@ -53,8 +53,6 @@
 
                         <input type="hidden" name="token" value="{{ $token }}">
                         <fieldset>
-                            <label for="name">{{ __('auth.name') }}</label>
-                            <input type="text" name="name" placeholder="{{ __('auth.full_name') }}" class="pure-input-1" value="{{ old('name') }}">
 
                             <label for="email">{{ __('auth.email') }}</label>
                             <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
