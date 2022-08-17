@@ -22,7 +22,7 @@
         <div class="content pure-u-1-2 pure-u-md-1-2">
             <div class="header-medium">
 
-            <h1 class="subhead">{{ __('auth.confirm_passwords.title') }}</h1>
+            <h1 class="subhead">Please confirm your password before continuing.</h1>
 
             @error('email')
             <aside class="pure-message message-error">
@@ -39,19 +39,19 @@
                 @csrf
                 <fieldset>
 
-                    <label for="email">{{ __('auth.email') }}</label>
-                    <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email" class="pure-input-1" value="{{ old('email') }}">
 
-                    <label for="password">{{ __('auth.password') }}</label>
-                    <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" required autocomplete="current-password" value="">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" class="pure-input-1" required autocomplete="current-password" value="">
 
                     @if ($errors->has('password'))
                         <span class="error invalid-feedback">{{ $errors->first('password') }}</span>
                     @endif
-                    <button type="submit" class="pure-button button-success">{{ __('auth.confirm_password') }}</button>
+                    <button type="submit" class="pure-button button-success">Confirm Password</button>
 
                     <p>
-                        <a href="{{ route('password.request') }}">{{ __('auth.confirm_passwords.forgot_your_password') }}</a>
+                        <a href="{{ route('password.request') }}">Forgot Your Password?</a>
                     </p>
                 </fieldset>
             </form>
