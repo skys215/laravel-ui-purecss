@@ -61,7 +61,7 @@
 
                 <div class="footer">
                     <div class="pure-menu pure-menu-horizontal">
-                        <h3>Copyright &copy; 2014-2022 <a href="{{ url('/') }}">{{ config('app.name') }}</a>. All rights reserved.</h3>
+                        <h3>Copyright &copy; 2022 <a href="{{ url('/') }}">{{ config('app.name') }}</a>. All rights reserved.</h3>
                     </div>
                 </div>
             </div>

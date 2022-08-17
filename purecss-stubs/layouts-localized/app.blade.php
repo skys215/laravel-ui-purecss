@@ -26,7 +26,7 @@
 
             <!-- Main Footer -->
             <div class="header-small footer">
-                <h3>Copyright &copy; 2014-2022 <a href="{{ url('/') }}">{{ config('app.name') }}</a>. All rights reserved.</h3>
+                <h3>Copyright &copy; 2022 <a href="{{ url('/') }}">{{ config('app.name') }}</a>. All rights reserved.</h3>
             </div>
         </div>
 
