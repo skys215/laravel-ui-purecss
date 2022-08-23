@@ -24,11 +24,6 @@
 
             <h1 class="subhead">Please confirm your password before continuing.</h1>
 
-            @error('email')
-            <aside class="pure-message message-error">
-                <p><strong>ERROR</strong>: {{ $message }}</p>
-            </aside>
-            @enderror
             @error('password')
             <aside class="pure-message message-error">
                 <p><strong>ERROR</strong>: {{ $message }}</p>
@@ -38,10 +33,6 @@
             <form method="POST" action="{{ route('password.confirm') }}" class="pure-form pure-form-stacked">
                 @csrf
                 <fieldset>
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Email" class="pure-input-1" value="{{ old('email') }}">
-
                     <label for="password">Password</label>
                     <input type="password" name="password" placeholder="Password" class="pure-input-1" required autocomplete="current-password" value="">
 

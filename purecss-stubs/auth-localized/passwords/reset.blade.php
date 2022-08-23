@@ -63,7 +63,7 @@
                             <label for="password">{{ __('auth.confirm_password') }}</label>
                             <input type="password" name="password_confirmation" placeholder="{{ __('auth.retype_password') }}" class="pure-input-1" value="">
 
-                            <button type="submit" class="pure-button button-success">{{ __('auth.reset_password.title') }}</button>
+                            <button type="submit" class="pure-button button-success">{{ __('auth.reset_password.reset_pwd_btn') }}</button>
 
                             <p>
                                 <a href="{{ route('login') }}" class="text-center">{{ __('auth.login') }}</a>

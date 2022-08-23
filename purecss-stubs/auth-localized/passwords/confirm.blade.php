@@ -24,11 +24,6 @@
 
             <h1 class="subhead">{{ __('auth.confirm_passwords.title') }}</h1>
 
-            @error('email')
-            <aside class="pure-message message-error">
-                <p><strong>ERROR</strong>: {{ $message }}</p>
-            </aside>
-            @enderror
             @error('password')
             <aside class="pure-message message-error">
                 <p><strong>ERROR</strong>: {{ $message }}</p>
@@ -38,9 +33,6 @@
             <form method="POST" action="{{ route('password.confirm') }}" class="pure-form pure-form-stacked">
                 @csrf
                 <fieldset>
-
-                    <label for="email">{{ __('auth.email') }}</label>
-                    <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
 
                     <label for="password">{{ __('auth.password') }}</label>
                     <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" required autocomplete="current-password" value="">

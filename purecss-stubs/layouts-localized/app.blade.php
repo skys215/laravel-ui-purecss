@@ -19,7 +19,7 @@
 
         <div class="content pure-u-5-6 pure-u-md-21-24">
             <div class="header-small content-wrapper">
-                <h1 class="subhead">@yield('title', __('dashboard'))</h1>
+                <h1 class="subhead">@yield('title', __('Dashboard'))</h1>
 
                 @yield('content')
             </div>
