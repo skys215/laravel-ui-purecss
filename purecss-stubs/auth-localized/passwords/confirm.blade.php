@@ -34,8 +34,8 @@
                 @csrf
                 <fieldset>
 
-                    <label for="password">{{ __('auth.password') }}</label>
-                    <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" required autocomplete="current-password" value="">
+                    <label for="password">{{ __('Password') }}</label>
+                    <input type="password" name="password" placeholder="{{ __('Password') }}" class="pure-input-1" required autocomplete="current-password" value="">
 
                     @if ($errors->has('password'))
                         <span class="error invalid-feedback">{{ $errors->first('password') }}</span>

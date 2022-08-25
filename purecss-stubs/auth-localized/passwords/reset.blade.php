@@ -57,8 +57,8 @@
                             <label for="email">{{ __('auth.email') }}</label>
                             <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
 
-                            <label for="password">{{ __('auth.password') }}</label>
-                            <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" value="">
+                            <label for="password">{{ __('Password') }}</label>
+                            <input type="password" name="password" placeholder="{{ __('Password') }}" class="pure-input-1" value="">
 
                             <label for="password">{{ __('auth.confirm_password') }}</label>
                             <input type="password" name="password_confirmation" placeholder="{{ __('auth.retype_password') }}" class="pure-input-1" value="">
@@ -66,7 +66,7 @@
                             <button type="submit" class="pure-button button-success">{{ __('auth.reset_password.reset_pwd_btn') }}</button>
 
                             <p>
-                                <a href="{{ route('login') }}" class="text-center">{{ __('auth.login') }}</a>
+                                <a href="{{ route('login') }}" class="text-center">{{ __('auth.sign_in') }}</a>
                             </p>
                         </fieldset>
                     </form>

@@ -21,8 +21,8 @@
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a class="pure-button active" href="{{ route('login') }}">{{ __('auth.login') }}</a>
-                            <a class="pure-button" href="{{ route('register') }}">{{ __('auth.login') }}</a>
+                            <a class="pure-button active" href="{{ route('login') }}">{{ __('auth.sign_in') }}</a>
+                            <a class="pure-button" href="{{ route('register') }}">{{ __('auth.sign_in') }}</a>
                         </li>
                     </ul>
                 </nav>
@@ -31,7 +31,7 @@
 
         <div class="content pure-u-1-2 pure-u-md-1-2">
             <div class="header-medium">
-                <h1 class="subhead">{{ __('auth.login') }}</h1>
+                <h1 class="subhead">{{ __('auth.sign_in') }}</h1>
 
                 @error('email')
                 <aside class="pure-message message-error">
@@ -51,8 +51,8 @@
                         <label for="email">{{ __('auth.email') }}</label>
                         <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
 
-                        <label for="password">{{ __('auth.password') }}</label>
-                        <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" value="">
+                        <label for="password">{{ __('Password') }}</label>
+                        <input type="password" name="password" placeholder="{{ __('Password') }}" class="pure-input-1" value="">
 
                         <label for="remember" class="pure-checkbox">
                             <input type="checkbox" id="remember" name="remember">

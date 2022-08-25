@@ -21,7 +21,7 @@
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a class="pure-button" href="{{ route('login') }}">{{ __('auth.login') }}</a>
+                            <a class="pure-button" href="{{ route('login') }}">{{ __('auth.sign_in') }}</a>
                             <a class="pure-button active" href="{{ route('register') }}">{{ __('auth.register') }}</a>
                         </li>
                     </ul>
@@ -58,8 +58,8 @@
                         <label for="email">{{ __('auth.email') }}</label>
                         <input type="email" name="email" placeholder="{{ __('auth.email') }}" class="pure-input-1" value="{{ old('email') }}">
 
-                        <label for="password">{{ __('auth.password') }}</label>
-                        <input type="password" name="password" placeholder="{{ __('auth.password') }}" class="pure-input-1" value="">
+                        <label for="password">{{ __('Password') }}</label>
+                        <input type="password" name="password" placeholder="{{ __('Password') }}" class="pure-input-1" value="">
 
                         <label for="password">{{ __('auth.confirm_password') }}</label>
                         <input type="password" name="password_confirmation" placeholder="{{ __('auth.retype_password') }}" class="pure-input-1" value="">
