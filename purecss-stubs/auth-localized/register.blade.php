@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ config('app.name') }} | {{ __('auth.registration.title') }}</title>
+    <title>{{ config('app.name') }} | {{ __('auth.register') }}</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -16,7 +16,7 @@
         <div class="sidebar pure-u-1-2 pure-u-md-1-2">
             <div class="header-large">
                 <h1>{{ config('app.name') }}</h1>
-                <h2>{{ __('auth.registration.title') }}</h2>
+                <h2>{{ __('auth.register') }}</h2>
 
                 <nav class="nav">
                     <ul>
@@ -62,7 +62,7 @@
                         <input type="password" name="password" placeholder="{{ __('Password') }}" class="pure-input-1" value="">
 
                         <label for="password">{{ __('auth.confirm_password') }}</label>
-                        <input type="password" name="password_confirmation" placeholder="{{ __('auth.retype_password') }}" class="pure-input-1" value="">
+                        <input type="password" name="password_confirmation" placeholder="{{ __('auth.confirm_password') }}" class="pure-input-1" value="">
 
                         <label for="agreeTerms">
                             <input type="checkbox" id="agreeTerms" name="terms" value="agree">
@@ -72,7 +72,7 @@
                         <button type="submit" class="pure-button button-success">{{ __('auth.register') }}</button>
 
                         <p class="mb-0">
-                            <a href="{{ route('login') }}" class="text-center">{{ __('auth.registration.have_membership') }}</a>
+                            <a href="{{ route('login') }}" class="text-center">{{ __('auth.sign_in') }}</a>
                         </p>
                     </fieldset>
                 </form>

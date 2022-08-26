@@ -54,7 +54,7 @@
                             <a href="{{ route("login") }}">{{ __('auth.sign_in') }}</a>
                         </p>
                         <p>
-                            <a href="{{ route("register") }}">{{ __('auth.registration.title') }}</a>
+                            <a href="{{ route("register") }}">{{ __('auth.register') }}</a>
                         </p>
                     </fieldset>
                 </form>

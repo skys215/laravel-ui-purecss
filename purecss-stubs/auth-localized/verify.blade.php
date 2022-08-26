@@ -24,7 +24,7 @@
         <div class="content pure-u-1-2 pure-u-md-1-2">
             <div class="header-medium">
 
-                <h1 class="subhead">{{ __('auth.verify') }}</h1>
+                <h1 class="subhead">{{ __('auth.verify_email.title') }}</h1>
 
                 @if (session('resent'))
                     <div class="pure-message message-success" role="alert">{{ __('auth.verify_email.success') }}</div>
