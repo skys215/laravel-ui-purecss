@@ -52,7 +52,7 @@
                 <form action="{{ route('register') }}" method="POST" class="pure-form pure-form-stacked">
                     @csrf
                     <fieldset>
-                        <label for="name">{{ __('auth.name') }}</label>
+                        <label for="name">{{ __('auth.full_name') }}</label>
                         <input type="text" name="name" placeholder="{{ __('auth.full_name') }}" class="pure-input-1" value="{{ old('name') }}">
 
                         <label for="email">{{ __('auth.email') }}</label>

@@ -16,7 +16,7 @@
         <div class="sidebar pure-u-1-2 pure-u-md-1-2">
             <div class="header-large">
                 <h1>{{ config('app.name') }}</h1>
-                <h2>{{ __('auth.subtitle') }}</h2>
+                <h2>{{ __('auth.login.title') }}</h2>
 
                 <nav class="nav">
                     <ul>
@@ -65,7 +65,7 @@
                             <a href="{{ route('password.request') }}">{{ __('auth.login.forgot_password') }}</a>
                         </p>
                         <p>
-                            <a href="{{ route('register') }}" class="text-center">{{ __('auth.login.register_membership') }}</a>
+                            <a href="{{ route('register') }}" class="text-center">{{ __('auth.registration.title') }}</a>
                         </p>
                     </fieldset>
                 </form>
