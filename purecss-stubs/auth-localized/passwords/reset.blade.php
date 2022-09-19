@@ -16,14 +16,14 @@
         <div class="sidebar pure-u-1-2 pure-u-md-1-2">
             <div class="header-large">
                 <h1>{{ config('app.name') }}</h1>
-                <h2>{{ __('auth.reset_password.title') }}</h2>
+                <h2>{{ __('auth.reset_password.reset_pwd_btn') }}</h2>
             </div>
         </div>
 
         <div class="content pure-u-1-2 pure-u-md-1-2">
             <div class="header-medium">
 
-                    <h1 class="subhead">{{ __('auth.forgot_password') }}</h1>
+                    <h1 class="subhead">{{ __('auth.reset_password.title') }}</h1>
 
                     @error('email')
                     <aside class="pure-message message-error">

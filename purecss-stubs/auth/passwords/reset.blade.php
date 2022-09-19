@@ -16,14 +16,14 @@
         <div class="sidebar pure-u-1-2 pure-u-md-1-2">
             <div class="header-large">
                 <h1>{{ config('app.name') }}</h1>
-                <h2>You are only one step a way from your new password, recover your password now.</h2>
+                <h2>Reset Password</h2>
             </div>
         </div>
 
         <div class="content pure-u-1-2 pure-u-md-1-2">
             <div class="header-medium">
 
-                    <h1 class="subhead">{{ __('auth.forgot_password') }}</h1>
+                    <h1 class="subhead">You are only one step a way from your new password, recover your password now.</h1>
 
                     @error('email')
                     <aside class="pure-message message-error">
